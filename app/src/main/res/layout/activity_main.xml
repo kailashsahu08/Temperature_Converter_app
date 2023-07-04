@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/main_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/description"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CtoK"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/description"
+        android:layout_height="200dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#D63B3B"
+        app:cardCornerRadius="34dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="50dp"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Celsius     ->       Kelvin"
+                android:paddingStart="30dp"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="50dp"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Celsius  ->    Fahrenheit"
+                android:paddingStart="30dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/FtoK"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/CtoK"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#48A64B"
+        app:cardCornerRadius="34dp"
+        app:cardUseCompatPadding="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="50dp"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Farenheight  ->  kelvin"
+                android:paddingStart="30dp"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="50dp"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Farenheight  ->  Celsius"
+                android:paddingStart="30dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/KtoC"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/FtoK"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#673AB7"
+        app:cardCornerRadius="34dp"
+        app:cardUseCompatPadding="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="50dp"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Kelvin    ->      Celsius"
+                android:paddingStart="30dp"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="50dp"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Kelvin    ->    Fahrenheit"
+                android:paddingStart="30dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
+
+
+
+

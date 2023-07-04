@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Temperature_Calculator</string>
+    <string name="description">Welcome To My Temperature Converter App</string>
+    <string name="aboutconverter">Enter The Temperature Here : </string>
+    <string name="result">The Result Will Be Shown Here : </string>
+    <string name="top">This is a temperature converter app we can convert the unit of temperature</string>
+</resources>

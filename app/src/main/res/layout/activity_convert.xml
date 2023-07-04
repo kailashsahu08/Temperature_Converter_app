@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/res_back"
+    android:orientation="vertical"
+    tools:context=".convert_activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/top"
+                android:text="@string/top"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/aboutConverter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top"
+                android:text="@string/aboutconverter"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                />
+            <LinearLayout
+                android:id="@+id/totalResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutConverter"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/insert_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="15dp"
+                    android:hint="Enter Temperature"
+                    android:inputType="number"
+                    android:background="@drawable/enter_background"
+                    android:drawableStart="@drawable/hot__2_"
+                    android:drawablePadding="10dp"
+                    android:elevation="30dp"/>
+
+                <TextView
+                    android:id="@+id/resultdes1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/result"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/result1"
+                    android:layout_width="140dp"
+                    android:elevation="20dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/output_background"
+                    android:layout_marginTop="10dp"
+                    android:text="00.00"
+                    android:textAlignment="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/resultdes2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/result"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:id="@+id/result2"
+                    android:layout_width="140dp"
+                    android:elevation="20dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/output_background"
+                    android:layout_marginTop="10dp"
+                    android:text="00.00"
+                    android:textAlignment="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/convert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totalResult"
+                android:layout_marginStart="150dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:text="convert"
+                android:backgroundTint="#3F51B5"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
